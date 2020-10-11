@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.main-container{
+   z-index: 1;
+}
+#overlay-container{
+   z-index: 100;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#overlay-container .layout{
+   background-color: rgba(0, 0, 0,0.5);
+   opacity:0;
+   /* width: 100vw; */
+   color:white;
+   text-align: center;
+
+   font-family:"Poppins", sans-serif;
+
+}
+#overlay-container .replay{
+   margin-top: 20px;
+   padding: 10px 20px ;
+   background-color: rgba(255, 255, 255,0.2);
+   border: none;
+   border-radius: 5px;
+   letter-spacing: 5px;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+}
+#overlay-container .replay:hover{
+   cursor: pointer;
+   background-color:#17c3b2;
+   transition: 0.2s ease-out;
+   
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+   #overlay-container .layout{
+      font-size: 12px;
+   }
+   #overlay-container .replay{
+      margin-top: 10px;
+      font-size: 8px;
+      padding: 5px 10px ;
+     
+      border-radius: 2px;
+      letter-spacing: 2px;
+      
+   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1000px) {
+   
+}
+

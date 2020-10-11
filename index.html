@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/overlay.css">
+   <script src="scripts/rps.js"></script>
+   <script src="scripts/move-elements.js"></script>
+   <script src="scripts/overlay.js"></script>
+   <title>Rock Paper Scissors</title>
+
+</head>
+
+<body>
+   <div id="overlay-container">
+
+   </div>
+   <section class="main-container">
+      <section id="computer">
+         <div id="comp-container" class="card-container">
+            <div class="card rock"></div>
+            <div class="card paper"></div>
+            <div class="card scissors"></div>
+         </div>
+      </section>
+      <section id="user">
+         <div id="user-container" class="card-container">
+            <div class="card rock" onclick="move(0)">
+               <p>ROCK</p>
+            </div>
+            <div class="card paper" onclick="move(1)">
+               <p>PAPER</p>
+            </div>
+            <div class="card scissors" onclick="move(2)">
+               <p>SCISSORS</p>
+            </div>
+         </div>
+      </section>
+   </section>
+
+</body>
+
+</html>
